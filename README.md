@@ -4,6 +4,7 @@ This project demonstrates a ROS-based pick-and-stack robotic system using the Ki
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e81f9fd3-3f54-4f9f-b66c-5493b3eca841" />
 
+![Kinova_ROS-MCP-Server-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/98e0aae6-8d14-4ec5-bee7-a16e56e0ef78)
 
 
 Project Overview:
