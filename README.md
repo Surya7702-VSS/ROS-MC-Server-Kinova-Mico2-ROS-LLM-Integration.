@@ -1,11 +1,7 @@
 # Kinova_Mico2-ROS-LLM-Integration-ROS-MCP-Server.
 This project demonstrates a ROS-based pick-and-stack robotic system using the Kinova Mico 2 robotic arm, where high-level task planning is handled using a Claude Large Language Model (LLM).  The robot autonomously performs pick and stacking operations using natural-language, ros-mcp-server and executing them through a ROS control pipeline.
 
-
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e81f9fd3-3f54-4f9f-b66c-5493b3eca841" />
-
-![Kinova_ROS-MCP-Server-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/98e0aae6-8d14-4ec5-bee7-a16e56e0ef78)
-
 
 Project Overview:
 The Kinova Mico 2 robot performs sequential pick and stack operations
@@ -16,6 +12,8 @@ High-level decision making
 Low-level motion execution is handled using ROS and MoveIt
 The entire pipeline is tested and validated in simulation and execution
 
+![Kinova_ROS-MCP-Server-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/98e0aae6-8d14-4ec5-bee7-a16e56e0ef78)
+
 This project highlights the integration of LLMs with classical robotics motion planning.
 
 Tools & Technologies Used:
@@ -25,6 +23,9 @@ MoveIt – motion planning and execution
 Gazebo – simulation environment
 Kinova Mico 2 SDK
 Gazebo Link Attacher Plugin – grasp simulation
+
+![Kinova_ROS-MCP-Server-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/bad409f6-6287-4a82-8a7d-af2647054a04)
+
 
 AI & LLM Integration:
 Claude Large Language Model
