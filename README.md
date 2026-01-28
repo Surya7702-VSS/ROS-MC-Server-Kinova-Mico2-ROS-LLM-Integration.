@@ -61,3 +61,12 @@ Vision-based object detection
 Real-world deployment with RGB-D camera
 Feedback loop from execution to LLM
 Multi-object task planning
+
+
+👤 Author
+
+Vaasantha Sri Surya
+Computer Science Engineer | Mechatronics Background
+Interested in Embedded Systems, Robotics, and AI
+
+🔗 LinkedIn: www.linkedin.com/in/vaasantha-sri-surya-kalidindi-3ba72333a
