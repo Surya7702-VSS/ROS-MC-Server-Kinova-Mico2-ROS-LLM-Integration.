@@ -86,8 +86,8 @@ This project builds upon the **ROS MCP Server** developed by the Robot MCP commu
 
 - 🔗 ROS MCP Server Repository:  
   https://github.com/robotmcp/ros-mcp-server
-
-The MCP server was used as the interface layer between the Claude LLM and ROS, enabling structured tool-based interaction with the robot system.
+  
+The ROS MCP Server was integrated and adapted to work with the Kinova Mico 2 pick-and-stack pipeline used in this project.
 
 
 ## 👤 Author
