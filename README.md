@@ -83,32 +83,32 @@ This architecture allows classical robotics pipelines to be controlled by modern
 
 ![Hardwaresetup1-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/a4a097f5-2aa8-424f-a31b-9038796b68ba)
 
-## 👁️ Vision System & Eye-to-Hand Calibration
+## Vision System & Eye-to-Hand Calibration
 
 The system incorporates a **vision-guided manipulation pipeline** using an external RGB-D camera setup (eye-to-hand configuration).
 
-### 📷 Camera Setup
+### Camera Setup
 - Intel RealSense depth camera mounted externally (top/side view)
 - Provides full workspace visibility for object detection and tracking
 - Camera frame is calibrated relative to the robot base frame
 
-### 📐 Eye-to-Hand Calibration
+### Eye-to-Hand Calibration
 - Implemented **Aruco marker-based calibration**
 - Solved **hand–eye calibration problem (AX = XB)** to compute transformation between:
   - Camera frame
   - Robot base frame
 - Enabled accurate mapping from image coordinates → robot coordinates
 
-### 🔍 Perception Pipeline
+### Perception Pipeline
 - RGB-D data used for:
   - Object detection and segmentation
   - Depth-based localization
   - 3D coordinate extraction
 - Coordinate transformations handled using **ROS TF**
 
-📌 This enables precise vision-guided pick-and-place operations in a structured workspace.
+This enables precise vision-guided pick-and-place operations in a structured workspace.
 
-## 🧠 Machine Vision Pipeline
+## Machine Vision Pipeline
 
 The perception system processes visual input to generate actionable robot commands.
 
@@ -125,7 +125,7 @@ The perception system processes visual input to generate actionable robot comman
 - Robust to varying object positions
 - Integrated with motion planning pipeline
 
-## 🌍 Toward Real-World Deployment
+## Toward Real-World Deployment
 
 The system is designed to transition from simulation to real-world environments by:
 
