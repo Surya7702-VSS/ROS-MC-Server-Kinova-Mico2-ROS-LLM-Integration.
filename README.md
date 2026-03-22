@@ -79,6 +79,65 @@ This architecture allows classical robotics pipelines to be controlled by modern
 - Feedback loop from execution to LLM
 - Multi-object task planning
 
+## Hardware Deployment and Updates
+
+![Hardwaresetup1-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/a4a097f5-2aa8-424f-a31b-9038796b68ba)
+
+## 👁️ Vision System & Eye-to-Hand Calibration
+
+The system incorporates a **vision-guided manipulation pipeline** using an external RGB-D camera setup (eye-to-hand configuration).
+
+### 📷 Camera Setup
+- Intel RealSense depth camera mounted externally (top/side view)
+- Provides full workspace visibility for object detection and tracking
+- Camera frame is calibrated relative to the robot base frame
+
+### 📐 Eye-to-Hand Calibration
+- Implemented **Aruco marker-based calibration**
+- Solved **hand–eye calibration problem (AX = XB)** to compute transformation between:
+  - Camera frame
+  - Robot base frame
+- Enabled accurate mapping from image coordinates → robot coordinates
+
+### 🔍 Perception Pipeline
+- RGB-D data used for:
+  - Object detection and segmentation
+  - Depth-based localization
+  - 3D coordinate extraction
+- Coordinate transformations handled using **ROS TF**
+
+📌 This enables precise vision-guided pick-and-place operations in a structured workspace.
+
+## 🧠 Machine Vision Pipeline
+
+The perception system processes visual input to generate actionable robot commands.
+
+### Pipeline Steps:
+1. Capture RGB-D data from Intel RealSense
+2. Detect objects using color/geometry-based segmentation
+3. Estimate object pose (x, y, z) in camera frame
+4. Transform coordinates to robot base frame using TF
+5. Generate grasp poses for manipulation
+
+### Key Features:
+- Real-time object localization
+- Depth-based accuracy for manipulation
+- Robust to varying object positions
+- Integrated with motion planning pipeline
+
+## 🌍 Toward Real-World Deployment
+
+The system is designed to transition from simulation to real-world environments by:
+
+- Integrating RGB-D camera-based perception
+- Enabling vision-guided manipulation
+- Supporting dynamic object localization
+- Maintaining safety through workspace constraints
+
+Future work includes:
+- Real-time object detection using deep learning (YOLO)
+- Multi-camera perception setup (top + side view)
+- Improved grasp planning for complex objects
 
 ## Acknowledgements
 
